@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+        <div id="container">
+            <label id="display">0</label>
+            <button type="button" value="clear" class="clear key" data-key="66">AC</button>
+            <button  type="button" value="sign" class="sign key" data-key="65">+/-</button>
+            <button  type="button" value="percent" class="percent key" data-key="112">%</button>
+            <button  type="button" value="/" class="operator key" data-key="47">/</button>
+            <button  type="button" value="7" class="operand key" data-key="55">7</button>
+            <button  type="button" value="8" class="operand key" data-key="56">8</button>
+            <button  type="button" value="9" class="operand key" data-key="57">9</button>
+            <button  type="button" value="*" class="operator key" data-key="42">*</button>
+            <button  type="button" value="4" class="operand key" data-key="52">4</button>
+            <button  type="button" value="5" class="operand key" data-key="53">5</button>
+            <button  type="button" value="6" class="operand key" data-key="54">6</button>
+            <button  type="button" value="-" class="operator key" data-key="45">-</button>
+            <button  type="button" value="1" class="operand key" data-key="49">1</button>
+            <button  type="button" value="2" class="operand key" data-key="50">2</button>
+            <button  type="button" value="3" class="operand key" data-key="51">3</button>
+            <button  type="button" value="+" class="operator key" data-key="43">+</button>
+            <button  type="button" value="0" class="operand zero key" data-key="48">0</button>
+            <button  type="button" value="decimal" class="decimal key" data-key="46">.</button>
+            <button  type="button" value="=" class="equals key" data-key="69">=</button>
+        </div>
+        <audio src="sounds/operand.wav" class="s1"></audio>
+        <audio src="sounds/operator.wav" class="s2"></audio>
+        <audio src="sounds/operate.wav" class="s3"></audio>
+        <!--<audio src="sounds/special.wav" class="s4"></audio>-->
+        <script src="scripts/calc.js" sync defer></script>
+    </body>
+</html>
