@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Wood;
+    src: url(fonts/AlphaWood.ttf) format("truetype");
+    font-weight: bold
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #a4a4a4;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background-color: rgb(206, 145, 98);
+    padding: 25px;
+    font-family: Wood;
+    background-image: url("textures/wood_texture.png");
+    box-shadow: black 0px 0px 2px 2px;
+}
+
+.buttons-container {
+    display: flex;
+    background-color: rgba(185, 179, 179, 0.336);
+    flex-direction: column;
+    width: calc(100% - 50px);
+    height: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    font-family: Wood;
+    border: 1px solid yellow;
+}
+
+#players-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#scores-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100% - 50px);
+    font-size: 70px;
+    padding: 25px;
+}
+
+#message-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    /*background-color: rgb(231, 199, 187);*/
+    text-align: center;
+    /*border: 3px green solid;*/
+}
+
+#selection-container {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.scores {
+    background-color: white;
+    width: 70px;
+    text-align: center;
+    border: brown 2px solid;
+    line-height: 90px;
+    box-shadow: black 0px 0px 2px 2px;
+}
+
+.message {
+    font-size: 50px;
+    line-height: 70px;
+    font-family: Wood;
+    color: rgb(255, 255, 255);   
+}
+
+.button {
+    padding: 10px;
+    width: 125px;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    box-shadow: black 0px 0px 2px 2px;
+    text-decoration: none;
+}
+
+#play-button {
+    width: 300px;
+    font-family: Wood;
+    background-color: rgb(175, 218, 238);
+    border: none;
+}
+
+.rock-button {
+    /*background-color: linear-gradient(to right, rgba(153, 148, 148, 0.8), rgba(160, 154, 154, 1));*/
+    font-family: Wood;
+    background-image: url("textures/rock_texture.jpg");
+    color: white;    
+}
+
+.paper-button {
+    /*background-color: rgb(230, 230, 230);*/
+    font-family: Wood;
+    background-image: url("textures/paper_texture.jpg");
+}
+
+.scissors-button {
+    /*background-color: rgb(197, 197, 197);*/
+    font-family: Wood;
+    background-image: url("textures/silver_texture2.jpg");
+    color: white;
+    object-fit: scale-down;
+    
+}
+
+.player, .computer {
+    padding: 10px;
+    background-color: white;
+    border: 3px solid brown;
+    box-shadow: black 0px 0px 2px 2px;
+}
+
+.player {
+    margin-left: 40px;
+}
+
+.computer {
+    margin-right: 10px;
+}
