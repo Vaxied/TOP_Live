@@ -67,7 +67,7 @@ function checkWinner()
         gameOver = true;
         result = "You lose! Try harder the next time!";
         console.log("you lose");
-        document.querySelector("#play-button").textContent = "Play again!"
+        document.querySelector("#play-button").textContent = "Play again"
         document.querySelector(".message").textContent = result;
         message = document.querySelector(".message").textContent;
     }
