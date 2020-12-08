@@ -58,7 +58,7 @@ function checkWinner()
         gameOver = true;
         result = "Congratulations! You Won!";
         console.log("you win");
-        document.querySelector("#play-button").textContent = "Play again!"
+        document.querySelector("#play-button").textContent = "Play again"
         document.querySelector(".message").textContent = result;
         message = document.querySelector(".message").textContent;
     }
